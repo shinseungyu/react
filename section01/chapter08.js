@@ -11,12 +11,12 @@ let var4 = var1 ?? var2;
 // 이건 20출력됨
 let var5 = var1 ?? var3;
 let var6 = var2 ?? var3;
-
 console.log(var6);
 
 let userName = "이정환";
 let userNickName = "winterlood";
-// 유저네임이 있다면 userName 출력 없다면 userNickName출력 A가 null 또는 undefined일 때만 B를 사용한다 그래서 안나오는것임
+// 유저네임이 있다면 userName 출력 없다면 userNickName출력 앞에가 null이나 undefined일때만 b를 호출하는것이다.
+// 추가설명: A가 null 또는 undefined일 때만 B를 사용한다 그래서 안나오는것임
 let displayName = userName ?? userNickName;
 console.log(displayName);
 
@@ -37,6 +37,6 @@ console.log(t1);
 //  조건식을 이용해서 참, 거짓일 때의 값을 다르게 변환
 let var8 = 10;
 // 요구사항 : 변수 res에 var8의 값이 짝수일때는 -> "짝", 홀수 -> "홀"
-
+//  ?를 기준으로 왼쪽이 조건식  
 let res = var8 % 2 === 0 ? "짝수" : "홀수";
 console.log(res);
